@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+}
+body{
+    background-color: rgb(227, 201, 216);
+}
+
+body img{
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #ff4757;
+}
+.pradeep{
+    margin-left: 75%;
+    color: whitesmoke;
+}
+#hai{
+   color: black;
+}
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10px;
+}
+
+.box {
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+
+}
+
+.cart-outline {
+    position: absolute;
+    background-color: #2f3542;
+    top: -5px;
+    right: 0;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 50px;
+    z-index: 99;
+    
+}
+
+#cart-icon {
+    position: absolute;
+    font-size: 1.5rem;
+    padding-top: 2px;
+  
+    position: fixed;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200;
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+}
+
+h2.title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    color: black;
+    text-align: center;
+}
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cake-box {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 1px 10px rgba(48, 37, 37, 8.1);
+    border-radius: 10px;
+}
+
+.pic {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.pic:hover img {
+    transform: scale(1.5);
+}
+
+.cake-img {
+    transition: 0.5s;
+}
+
+.cake-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff6348;
+    margin-top: 5px;
+}
+
+.cake_price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #dfc3ad;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+    transition: 0.5s;
+}
+
+.add-cart:hover {
+    background-color: rgba(255, 0, 0, 0.786);
+}
+
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+    z-index: 100;
+}
+
+.cart-active {
+    right: 0;
+    transition: 0.5s;
+
+}
+
+.price-box {
+    color: black;
+}
+
+.detail-box {
+    color: black;
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.cart-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cart-cake-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #2f3542;
+    font-weight: 500;
+    color: #ff6348;
+}
+
+.cart-quantity {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    width: 2.4rem;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.remove {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+
+
+}
+
+.total-price {
+    margin-left: 1rem;
+
+}
+
+#btn {
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: #dfc3ad;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#btn:hover {
+    background-color: rgba(255, 0, 0, 0.786);
+}
+
+#cart-close {
+
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.cake-price {
+    text-decoration: line-through;
+    display: inline;
+}
+
+.cake-bo {
+    margin-left: 10px;
+}
+
+.pic img {
+    height: 200px;
+    width: 400px;
+}
+
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contain img {
+    height: 200px;
+    width: 300px;
+}
+
+#five {
+    background-color: beige;
+    border-style: groove;
+    box-shadow: 5px 5px 10px 10px#2f3542;
+}
+
+#five p {
+    margin-left: 5px;
+}
+
+#five h2 {
+    margin-top: 20px;
+}
+
+.carousel-inner img {
+    height: 78.8vh;
+
+}
+#three{
+    background-color: rgb(227, 201, 216);
+    border-radius: 20px;
+}
+
+
+#three h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.cake-box h2 {
+    text-align: center;
+}
+
+.dhoni1 input {
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.dhoni1 button {
+    border-radius: 7px;
+    background-color: gray;
+    color: white;
+}
+
+.dhoni1 img {
+    width: 20px;
+    margin-left: 5px;
+}
+.doll{
+    background-color:rgb(254, 232, 240);
+}
+#three img{
+    border-radius: 30px;
+}
+#five{
+    border-radius: 30px;
+}
+

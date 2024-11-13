@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kalam", cursive;
+}
+body{
+    background-color: rgb(227, 201, 216);
+}
+
+body img{
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #ff4757;
+}
+
+.carousel-inner img {
+    height: 78.8vh;
+
+}
+#three{
+    background-color: rgb(227, 201, 216);
+    border-radius: 20px;
+}
+
+
+#three h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.cake-box h2 {
+    text-align: center;
+}
+
+.dhoni1 input {
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.dhoni1 button {
+    border-radius: 7px;
+    background-color: gray;
+    color: white;
+}
+
+.dhoni1 img {
+    width: 20px;
+    margin-left: 5px;
+}
+.doll{
+    background-color:rgb(254, 232, 240);
+}
+#three img{
+    border-radius: 30px;
+}
+#five{
+    border-radius: 30px;
+}
+
